@@ -5,6 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Wiki Cyclo</title>
    <link rel="stylesheet" href="entry.css">
+   <!-- link a typescript file -->
+   <script src="entry.js" defer></script>
+   
 </head>
 <body>
    <nav>
@@ -26,9 +29,11 @@
             <br><strong>#WikiCyclo</strong>, the free encyclopedia
          </p>
          <div id="search">
-            <input type="search" id="search-field" name="search" placeholder="Looking for something?">
+            <!-- search input field -->
+            <input type="search" id="search-field" name="search" placeholder="Looking for something?" autocomplete="off">
+
             <button type="submit" id="search-button">
-               <img src="search-icon.png" alt="Search" class="search-icon">
+               <img src="/assets/icons/send.png" alt="Search" class="search-icon" style="height: 25px; width: 30px;">
              </button>
          </div>
       </div>
