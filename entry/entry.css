@@ -185,6 +185,9 @@ h1 {
 
 .search-items {
    position: absolute;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  /* gap: 20px; */
    border: 1px solid #d4d4d4;
    border-bottom: none;
    border-top: none;
@@ -193,12 +196,14 @@ h1 {
    top: 100%;
    left: 0;
    right: 0;
+   box-shadow: var(--custom-shadow);
  }
  .search-items div {
    padding: 10px;
    cursor: pointer;
    background-color: #fff;
    border-bottom: 1px solid #d4d4d4;
+   text-align: center;
  }
  .search-items div:hover {
    /*when hovering an item:*/
@@ -208,7 +213,4 @@ h1 {
    /*when navigating through the items using the arrow keys:*/
    background-color: DodgerBlue !important;
    color: #ffffff;
- }
- .search-items div:last-child{
-   box-shadow: var(--custom-shadow);
  }
