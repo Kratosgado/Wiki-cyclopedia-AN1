@@ -1,0 +1,55 @@
+main {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  
+  header {
+    margin-bottom: 30px;  
+  }
+  
+  header h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  header h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size:  50px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  figure{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+  
+  a {
+    color: #FF8F4D;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  th{
+     border: 1px solid black;
+  }
