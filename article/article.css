@@ -80,6 +80,7 @@ nav {
   justify-content: space-around;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: var(--custom-shadow);
   margin: 0;
   width: 400px;
 }
@@ -111,6 +112,27 @@ nav a:hover {
   color: black;
   align-content: center;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button {
+  border-left: none;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  box-shadow:  var(--custom-shadow);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: teal;
+}
 section,
 aside {
   display: flex;
@@ -131,7 +153,8 @@ aside a {
   padding-left: 10px;
   padding-top: 10px;
 }
-aside > h2, section > div {
+aside > h2,
+section > div {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   padding: 5px;
