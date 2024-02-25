@@ -1,0 +1,214 @@
+:root {
+  --primary-color: #007bff;
+  --radial-gradient: radial-gradient(circle, #d4d4d4, var(--primary-color));
+  --linear-gradient: linear-gradient(to bottom right, #f2f2f2, white);
+  --bar-gradient: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    white,
+    var(--primary-color)
+  );
+  --custom-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+} */
+.bg-image {
+  /* The image used */
+  background-image: url("/assets/images/background.jpg");
+  background-repeat: repeat-y;
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.foreground {
+  color: white;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 95%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 5px;
+  height: 60px;
+  /* width: fit-content; */
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0;
+  width: 400px;
+}
+nav a,
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.user-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.center-page {
+  display: flex;
+  flex-direction: row;
+  height: 650px;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border-radius: 10px; */
+  color: black;
+  align-content: center;
+}
+section,
+aside {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 20%;
+  height: max-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: var(--custom-shadow);
+}
+section a,
+aside a {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+aside > h2, section > div {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: var(--custom-shadow);
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 60%;
+  padding: 10px;
+}
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  border-left: none;
+  font-weight: bold;
+  background-color: var(--primary-color);
+  box-shadow: var(--custom-shadow);
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: teal;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 10px;
+  height: 60px;
+}
+footer > div {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: space-around;
+  width: 400px;
+}
+
+ul {
+  padding-left: 40px;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bar-gradient); /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
